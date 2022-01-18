@@ -18,7 +18,7 @@ function doTheMath(){
  * The expected return should be in the following format - string: "has an even/odd number of letters".
  */
 
-funciton isNameOddOrEven(){
+function isNameOddOrEven(){
     // your code here ...
 }
 
