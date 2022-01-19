@@ -64,13 +64,41 @@ doTheMath2(5, "/", 2) // 2.5
  * The expected return should be in the following format - string: "has an even/odd number of letters".
  */
 
-function isNameOddOrEven(){
-    // your code here ...
+function isNameOddOrEven(string){
+  let evenOdd
+  let lettersCount = 0
+  for(char of string){
+    if(char !== " " || char !== "," || char !== ".") lettersCount++
+  }
+  
+  if(lettersCount % 2 === 0) evenOdd = "even"
+  else evenOdd = "odd"
+  
+  return `
+  ${stirng}
+  has an ${evenOdd} number of letters
+  `
 }
 
 
 /**
  * Refactor both the above functions to be arrow functions.
  */
+
+const isNameOddOrEvenArrow = (string) => {
+  let evenOdd
+  let lettersCount = 0
+  for(char of string){
+    if(char !== " " || char !== "," || char !== ".") lettersCount++
+  }
+  
+  if(lettersCount % 2 === 0) evenOdd = "even"
+  else evenOdd = "odd"
+  
+  return `
+  ${stirng}
+  has an ${evenOdd} number of letters
+  `
+}
 
 
