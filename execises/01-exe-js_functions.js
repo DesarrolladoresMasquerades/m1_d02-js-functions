@@ -75,7 +75,7 @@ function isNameOddOrEven(string){
   else evenOdd = "odd"
   
   return `
-  ${stirng}
+  ${string}
   has an ${evenOdd} number of letters
   `
 }
